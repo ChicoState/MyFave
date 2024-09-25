@@ -20,7 +20,7 @@ int main(){
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < list.size(); i++){
-    cout << list.at(i) << endl;
+    cout << list.at(i) << endl; //fix code here so it won't output 'done' at the end
   }
 
   return 0;
