@@ -14,7 +14,6 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
-    //get whole line of input and store in 'input'
     std::getline (std::cin,input);
     favorites.push_back(input);
   }while( input != "done" );
