@@ -25,8 +25,7 @@ int main(){
       }
       list.push_back(input);
     }
-   // list.push_back(getline(cin, input));
-    //list.push_back(input);
+
   }while( input != "done" );
 
   cout << "Your favorite list:\n";
