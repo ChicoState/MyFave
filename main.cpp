@@ -16,8 +16,9 @@ int main(){
     }
     getline(cin, input);
     
-    if( input != "done")
+    if( input != "done"){
       list.push_back(input);
+    }
   }while( input != "done" );
 
   cout << "Your favorite list:\n";
