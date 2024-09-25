@@ -7,7 +7,7 @@ int main(){
   string input = "";
   vector<string> favorites;
 
-  do{
+  
     if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
     }
@@ -16,7 +16,7 @@ int main(){
     }
     cin >> input;
     favorites.push_back(input);
-  }while( input != "done" );
+  while( input != "done" );
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < favorites.size(); i++){
