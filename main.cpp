@@ -19,7 +19,10 @@ int main(){
     }
     
     getline(cin,input);
+
+    if(input != "done"){
     list.push_back(input);
+    }
     
 
 
