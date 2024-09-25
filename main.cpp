@@ -16,7 +16,7 @@ int main(){
     }
     cin >> input;
     list.push_back(input);
-  }while( input != "done" );
+  }while( input != "Done!"
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < list.size(); i++){
