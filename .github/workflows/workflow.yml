@@ -1,4 +1,4 @@
-name: in_class
+name: build_check
 
 on:
   push:
