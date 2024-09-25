@@ -9,7 +9,7 @@ int main(){
 
   do{
     if( list.empty() ){
-      cout << "What is your favorite class? Enter done when finished.\n";
+      cout << "What is your favorite class? Enter done when finished!\n";
     }
     else{
       cout << "What is your next favorite?\n";
