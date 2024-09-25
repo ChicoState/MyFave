@@ -10,6 +10,7 @@ int main(){
   do{
     if( list.size() == 0 ){
       cout << "What is your favorite?\n";
+      cout << "The Cake is a Lie\n";\
     }
     else{
       cout << "What is your next favorite?\n";
