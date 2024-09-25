@@ -26,6 +26,5 @@ int main(){
   for(int i = 0; i < list.size(); i++){
     cout << list.at(i) << endl;
   }
-
   return 0;
 }
