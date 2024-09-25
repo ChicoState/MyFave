@@ -15,8 +15,8 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     cin >> input;
-    list.push_back(input);
   }while( input != "done" );
+    list.push_back(input);
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < list.size(); i++){
