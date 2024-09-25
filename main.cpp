@@ -15,10 +15,6 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     cin >> input;
-<<<<<<< main
-=======
-    favorites.push_back(input);
->>>>>>> main
   }while( input != "done" );
     favorites.push_back(input);
 
