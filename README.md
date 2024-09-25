@@ -1,3 +1,5 @@
+[![build_check](https://github.com/cmgomes5/MyFave/actions/workflows/workflow.yml/badge.svg)](https://github.com/cmgomes5/MyFave/actions/workflows/workflow.yml)
+
 # MyFave
 
 This is a simple C++ command line application to maintain a list of your favorites.
