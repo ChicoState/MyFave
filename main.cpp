@@ -14,7 +14,8 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
-    cin >> input;
+    getline(cin, input);
+    // cin >> input;
     list.push_back(input);
   }while( input != "done" );
 
