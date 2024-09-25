@@ -5,10 +5,10 @@ using std::cout, std::cin, std::endl, std::string, std::vector;
 
 int main(){
   string input = "";
-  vector<string> list;
+  vector<string> favorites;
 
   do{
-    if( list.size() == 0 ){
+    if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
     }
     else{
