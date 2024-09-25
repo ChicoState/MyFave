@@ -20,7 +20,7 @@ int main(){
     }
     getline(cin, input);
     if(input != "done") {
-      list.push_back(input);
+      favorites.push_back(input);
     }
 
   }while( input != "done" );
