@@ -14,10 +14,11 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
-    cin >> input;
+    getline(cin,input);
     list.push_back(input);
   }while( input != "done" );
 
+  list.pop_back();
   cout << "Your favorite list:\n";
   for(int i = 0; i < list.size(); i++){
     cout << list.at(i) << endl;
