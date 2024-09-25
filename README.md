@@ -1,5 +1,8 @@
 # MyFave
 
+## Build Status Badge
+[![Build C++](https://github.com/the-real-brogrammer/MyFave/actions/workflows/actions.yml/badge.svg)](https://github.com/the-real-brogrammer/MyFave/actions/workflows/actions.yml)
+
 This is a simple C++ command line application to maintain a list of your favorites.
 
 ## Getting Started
@@ -27,4 +30,3 @@ docker run -it cpp-container sh
 ```
 docker run -v "$(pwd)":/usr/src -it cpp-container
 ```
-
