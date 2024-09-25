@@ -8,15 +8,17 @@ int main(){
   vector<string> list;
 
   do{
-    if( list.size() == 0 ){
-      cout << "What is your favorite?\n";
+    if( list.empty() ){
+      cout << "What is your favorite class? Enter done when finished.\n";
     }
     else{
       cout << "What is your next favorite?\n";
     }
-    cin >> input;
+    getline(cin,input);
     list.push_back(input);
   }while( input != "done" );
+
+  list.pop_back();
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < list.size(); i++){
