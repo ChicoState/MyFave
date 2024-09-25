@@ -28,3 +28,5 @@ docker run -it cpp-container sh
 docker run -v "$(pwd)":/usr/src -it cpp-container
 ```
 
+# Status badge
+[![Build C++](https://github.com/nrakocevic/MyFave/actions/workflows/main.yml/badge.svg)](https://github.com/nrakocevic/MyFave/actions/workflows/main.yml)
