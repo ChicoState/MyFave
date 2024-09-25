@@ -1,7 +1,6 @@
 # MyFave
 
-This is a simple C++ command line application to maintain a list of your favorites.
-
+[![Build C++](https://github.com/Harleyquinn1992/MyFaveQ1/actions/workflows/actions.yml/badge.svg)](https://github.com/Harleyquinn1992/MyFaveQ1/actions/workflows/actions.yml)
 ## Getting Started
 
 If you have not already built the image from `Dockerfile`, use the command:
@@ -26,5 +25,4 @@ docker run -it cpp-container sh
 
 ```
 docker run -v "$(pwd)":/usr/src -it cpp-container
-```
-[![Build C++](https://github.com/Harleyquinn1992/MyFaveQ1/actions/workflows/actions.yml/badge.svg)](https://github.com/Harleyquinn1992/MyFaveQ1/actions/workflows/actions.yml)
+``
