@@ -6,6 +6,8 @@ This is a simple C++ command line application to maintain a list of your favorit
 
 If you have not already built the image from `Dockerfile`, use the command:
 
+
+[![Build C++](https://github.com/Shalom-cmd/MyFave/actions/workflows/ci.yml/badge.svg)](https://github.com/Shalom-cmd/MyFave/actions/workflows/ci.yml)
 ```
 docker build -t cpp-container .
 ```
