@@ -1,3 +1,4 @@
+[![Build C++](https://github.com/blgrigg/MyFave/actions/workflows/ci.yml/badge.svg)](https://github.com/blgrigg/MyFave/actions/workflows/ci.yml)
 # MyFave
 
 This is a simple C++ command line application to maintain a list of your favorites.
@@ -28,4 +29,4 @@ docker run -it cpp-container sh
 docker run -v "$(pwd)":/usr/src -it cpp-container
 ```
 
-[![Build C++](https://github.com/blgrigg/MyFave/actions/workflows/ci.yml/badge.svg)](https://github.com/blgrigg/MyFave/actions/workflows/ci.yml)
+
