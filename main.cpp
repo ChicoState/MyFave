@@ -14,13 +14,14 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
-    cin >> input;
+    getline(cin,input);
     favorites.push_back(input);
   }while( input != "done" );
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < favorites.size(); i++){
-    cout << favorites.at(i) << endl;
+    if(favorites.at(i) != "done")
+     cout << favorites.at(i) << endl;
   }
 
   return 0;
