@@ -8,7 +8,7 @@ int main(){
   vector<string> favorites;
 
   do{
-    if( list.size() == 0 ){
+    if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
     }
     else{
