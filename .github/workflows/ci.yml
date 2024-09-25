@@ -3,6 +3,9 @@ name: Build C++
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main]
+    
 
 jobs:
   install:
@@ -18,4 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build project
-        run: g++ main.cpp -std=c++17 -o firstIO
+        run: g++ main.cpp -std=c++17 -o MyFave
