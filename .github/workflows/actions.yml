@@ -2,9 +2,9 @@ name: Build C++
 
 on:
   push:
-    branches: [ main ]
+    branches: [ ma/quiz1 ]
   pull_request:
-    branches: [ main ]
+    branches: [ ma/quiz1 ]
 
 jobs:
   install:
