@@ -15,7 +15,11 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     cin >> input;
-    list.push_back(input);
+    
+    if (input != "done"){
+      list.push_back(input);
+    }
+    
   }while( input != "done" );
 
   cout << "Your favorite list:\n";
