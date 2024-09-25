@@ -5,23 +5,23 @@ using std::cout, std::cin, std::endl, std::string, std::vector;
 
 int main(){
   string input = "";
-  vector<string> list;
+  vector<string> favorites;
 
   do{
-    if( list.size() == 0 ){
+    if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
     }
     else{
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
-    list.push_back(input);
+    favorites.push_back(input);
   }while( input != "done" );
 
   list.pop_back();
   cout << "Your favorite list:\n";
-  for(int i = 0; i < list.size(); i++){
-    cout << list.at(i) << endl;
+  for(int i = 0; i < favorites.size(); i++){
+    cout << favorites.at(i) << endl;
   }
 
   return 0;
