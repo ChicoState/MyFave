@@ -1,3 +1,4 @@
+[![Build C++](https://github.com/clmcguire/MyFave/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/clmcguire/MyFave/actions/workflows/c-cpp.yml)
 # MyFave
 
 This is a simple C++ command line application to maintain a list of your favorites.
