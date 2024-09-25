@@ -1,0 +1,25 @@
+name: Main.cpp Build Status
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  setup-environment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y -f build-essential g++ cmake
+  build:
+    needs: setup-environment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build
+        run: g++ main.cpp -std=c++17 -o tester
