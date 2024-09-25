@@ -14,13 +14,15 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
-    cin >> input;
-    favorites.push_back(input);
+
+    cin >> input; //fixing code here to accept 1 word using getline
+    list.push_back(input);
   }while( input != "done" );
 
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size(); i++){
-    cout << favorites.at(i) << endl;
+  for(int i = 0; i < list.size(); i++){
+    cout << list.at(i) << endl; //fix code here so it won't output 'done' at the end
+
   }
 
   return 0;
