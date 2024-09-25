@@ -14,12 +14,12 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
-    std::getline(cin, input);
+    std::getline(cin, input);	//getline to get multi word favorites
     list.push_back(input);
   }while( input != "done" );
 
   cout << "Your favorite list:\n";
-  for(int i = 0; i < list.size()-1; i++){
+  for(int i = 0; i < list.size()-1; i++){ // -1 to remove done from favorite list
     cout << list.at(i) << endl;
   }
 
