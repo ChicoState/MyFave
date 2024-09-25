@@ -1,3 +1,8 @@
+## "MyFave" | GitHub Actions (status badge)
+
+[![Build C++](https://github.com/chrisheesh/MyFave/actions/workflows/actions.yml/badge.svg)](https://github.com/chrisheesh/MyFave/actions/workflows/actions.yml)
+
+
 # MyFave
 
 This is a simple C++ command line application to maintain a list of your favorites.
