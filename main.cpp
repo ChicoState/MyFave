@@ -7,9 +7,10 @@ using std::endl;
 using std::string;
 using std::vector;
 
-int main(){
+int main()
+{
   string input = "";
-  vector<string> favorites;
+  vector <string> favorites;
 
   cout << "At any time, type DONE to stop recording favorites.\n";
 
@@ -21,19 +22,18 @@ int main(){
     else if (input != "DONE"){
       cout << "What is your next favorite?\n";
     }
-      getline(cin,input);
+    
+    getline(cin,input);
+    
     if (input != "DONE") {
       favorites.push_back(input);
     }
   }
   while( input != "DONE" );
   
-
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size(); i++)
-  {
+  for(int i = 0; i < favorites.size() -1; i++)
     cout << favorites.at(i) << endl;
-  }
 
   return 0;
 }
