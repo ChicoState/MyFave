@@ -1,7 +1,11 @@
 #include <iostream>
 #include <vector>
 
-using std::cout, std::cin, std::endl, std::string, std::vector;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+using std::vector;
 
 int main()
 {
@@ -12,16 +16,21 @@ int main()
 
   do
   {
-    if( favorites.size() == 0 )
+    if( favorites.size() == 0){
       cout << "What is your favorite?\n";
-
-    else
+    }
+    else if (input != "DONE"){
       cout << "What is your next favorite?\n";
-  
+    }
+    
     getline(cin,input);
-    favorites.push_back(input);
-  }while( input != "DONE" );
-
+    
+    if (input != "DONE") {
+      favorites.push_back(input);
+    }
+  }
+  while( input != "DONE" );
+  
   cout << "Your favorite list:\n";
   for(int i = 0; i < favorites.size() -1; i++)
     cout << favorites.at(i) << endl;
