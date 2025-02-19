@@ -1,0 +1,11 @@
+name: Status Workflow
+
+on:
+  [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    -name Compile main.cpp
+  run: g++ main.cpp --std=c++17 io MyFave 
