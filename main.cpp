@@ -3,28 +3,34 @@
 
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
-int main()
-{
-  string input = "";
-  vector <string> favorites;
+int main() {
+    string input = "";
+    vector<string> favorites;
 
-  cout << "At any time, type DONE to stop recording favorites.\n";
+    cout << "At any time, type DONE to stop recording favorites.\n";
 
-  do
-  {
-    if( favorites.size() == 0 )
-      cout << "What is your favorite?\n";
+    while (true) {
+        if (favorites.empty()) {
+            cout << "What is your favorite?\n";
+        } else {
+            cout << "What is your next favorite?\n";
+        }
 
-    else
-      cout << "What is your next favorite?\n";
-  
-    getline(cin,input);
-    favorites.push_back(input);
-  }while( input != "DONE" );
+        getline(cin, input);
 
-  cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
-    cout << favorites.at(i) << endl;
+        // 🔹 Fix: Don't add "DONE" to the list
+        if (input == "DONE") {
+            break;  // Stop input loop
+        }
 
-  return 0;
+        favorites.push_back(input);
+    }
+
+    // 🔹 Fix: Print the full list correctly
+    cout << "Your favorite list:\n";
+    for (const string& item : favorites) {
+        cout << item << endl;
+    }
+
+    return 0;
 }
