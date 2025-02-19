@@ -1,17 +1,19 @@
 name: Building CI Pipeline
 
 on:
-  pull_request:
-    branches: [ main ]
+   pull_request:
+      branches: [ main ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+   build:
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
+      steps:
+         - name: Check out repository
+           uses: actions/checkout@v2
 
-      - name: Compile C++ code
-        run: |
-          g++ main.cpp --std=c++17 -o MyFave
+         - name: Compile C++ code
+           run: |
+            g++ main.cpp --std=c++17 -o MyFave
+
+         
