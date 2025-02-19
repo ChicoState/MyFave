@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+[![Build C++](https://github.com/legendspy-1/MyFave/actions/workflows/actions.yml/badge.svg)](https://github.com/legendspy-1/MyFave/actions/workflows/actions.yml)
+
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
 int main()
