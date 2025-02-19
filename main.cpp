@@ -3,6 +3,9 @@
 
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
+[![Build C++](https://github.com/legendspy-1/MyFave/actions/workflows/actions.yml/badge.svg)](https://github.com/legendspy-1/MyFave/actions/workflows/actions.yml)
+
+
 int main(){
   string input = "";
   vector<string> favorites;
