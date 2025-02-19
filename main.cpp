@@ -32,6 +32,5 @@ int main(){
     cout << favorites.at(i) << endl;
   }
 
-
   return 0;
 }
