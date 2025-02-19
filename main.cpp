@@ -23,7 +23,7 @@ int main(){
 
   cout << "Your favorite list:\n";
   
-  for(int i = 0; i < favorites.size() - 1; i++)
+  for(int i = 0; i < favorites.size() -1; i++)
   {
     cout << favorites.at(i) << endl;
   }
