@@ -21,10 +21,15 @@ int main(){
     favorites.push_back(input);
   }while( input != "DONE" );
 
+    if( input == "DONE"){
+    favorites.erase(input);
+  }
   cout << "Your favorite list:\n";
   for(int i = 0; i < favorites.size() -1; i++)
   {
+    if(favorites.at(i) != "DONE"){
     cout << favorites.at(i) << endl;
+    }
   }
 
   return 0;
