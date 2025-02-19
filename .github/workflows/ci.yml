@@ -1,0 +1,26 @@
+name: CI Build
+
+on:
+  pull_request:
+    branches:
+      - main  #
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  
+
+      - name: Set up GCC
+        uses: actions/setup-java@v2  
+
+      - name: Install build tools
+        run: sudo apt-get install build-essential  
+
+      - name: Compile the Application
+        run: g++ main.cpp --std=c++17 -o MyFave  
+
+      - name: Verify build success
+        run: ./MyFave \
