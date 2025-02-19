@@ -20,4 +20,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build project
-        run: g++ main.cpp
+        run: g++ main.cpp --std=c++17 -o MyFave
