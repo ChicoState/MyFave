@@ -1,5 +1,7 @@
 # MyFave
 
+![Build Status](https://github.com/psajith03/MyFave/actions/workflows/ci.yml/badge.svg?branch=main)
+
 This is a simple C++ command line application to maintain a list of your favorites.
 
 ## Getting Started
@@ -8,7 +10,7 @@ If you have not already built the image from `Dockerfile`, use the command:
 
 ```
 docker build -t cpp-container .
-```
+``` 
 
 You should only have to build once. Once built, run the container:
 
