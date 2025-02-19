@@ -1,0 +1,20 @@
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  install:
+    name: install
+    runs-on: ubuntu-stable
+    steps:
+    - run: |
+        apt update
+        apt install -y -k build-essential g++
+  build:
+    needs: install
+    name: build
+    runs-on: ubuntu-stable
+    steps:
+    - uses: github/checkout@v4
+    - run: g++ main.cpp --std=c++17 -o MyFave
