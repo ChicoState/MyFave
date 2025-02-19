@@ -1,0 +1,25 @@
+name: Build
+on:
+  # Its usually a good idea to check whether build is success on every push, but may cost extra computing time
+  # push:
+  #   branches:
+  #     - '*'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y -f build-essential g++ cmake
+  build: 
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build project
+        run: g++ main.cpp -Wall -Werror # ensure no error or warning occures
