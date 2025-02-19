@@ -18,11 +18,17 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
-    favorites.push_back(input);
+    if(input == "DONE"){
+      //do not push back into array
+    } else {
+      //push back into array
+      favorites.push_back(input);
+    }
+    //favorites.push_back(input);
   }while( input != "DONE" );
 
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
+  for(int i = 0; i < favorites.size() ; i++)
   {
     cout << favorites.at(i) << endl;
   }
