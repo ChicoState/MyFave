@@ -3,20 +3,21 @@
 
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
-int main(){
+int main()
+{
   string input = "";
-  vector<string> favorites;
+  vector <string> favorites;
 
   cout << "At any time, type DONE to stop recording favorites.\n";
 
   do
   {
-    if( favorites.size() == 0 ){
+    if( favorites.size() == 0 )
       cout << "What is your favorite?\n";
-    }
-    else{
+
+    else
       cout << "What is your next favorite?\n";
-    }
+  
     getline(cin,input);
     if (input != "DONE"){
       favorites.push_back(input);
@@ -28,6 +29,7 @@ int main(){
   {
     cout << favorite << endl;
   }
+
 
   return 0;
 }
