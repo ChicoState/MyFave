@@ -18,6 +18,7 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
+    // Early Check to make sure We don't copy "DONE"
     if(input != "DONE"){
       favorites.push_back(input);
     }
