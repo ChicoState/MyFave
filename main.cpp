@@ -22,6 +22,7 @@ int main(){
   }while( input != "DONE" );
 
   cout << "Your favorite list:\n";
+  //Fixed Issue
   for(int i = 0; i < favorites.size() - 1; i++)
   {
     cout << favorites.at(i) << endl;
