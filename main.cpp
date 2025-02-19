@@ -19,7 +19,7 @@ int main(){
     }
     getline(cin,input);
     favorites.push_back(input);
-  }while( input != "DONE" );
+  }while( input != "DONE" && input != "done" );
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < favorites.size() -1; i++)
