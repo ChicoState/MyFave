@@ -15,7 +15,7 @@ int main() {
         } else {
             cout << "What is your next favorite?\n";
         }
-        
+
         getline(cin, input);
 
         // 🔹 Fix: Don't add "DONE" to the list
@@ -26,7 +26,7 @@ int main() {
         favorites.push_back(input);
     }
 
-    // 🔹 Fix: Print the full list (no incorrect skipping)
+    // 🔹 Fix: Print the full list correctly
     cout << "Your favorite list:\n";
     for (const string& item : favorites) {
         cout << item << endl;
