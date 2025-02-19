@@ -1,3 +1,5 @@
+[![Run Fav](https://github.com/annasehgal/MyFave/actions/workflows/main.yml/badge.svg)](https://github.com/annasehgal/MyFave/actions/workflows/main.yml)
+
 # MyFave
 
 This is a simple C++ command line application to maintain a list of your favorites.
@@ -27,4 +29,5 @@ docker run -it cpp-container sh
 ```
 docker run -v "$(pwd)":/usr/src -it cpp-container
 ```
+
 
