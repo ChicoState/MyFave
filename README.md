@@ -1,5 +1,7 @@
 # MyFave
 
+[![Build C++](https://github.com/G4m3rpri3st/MyFave/actions/workflows/MyFave.yml/badge.svg)](https://github.com/G4m3rpri3st/MyFave/actions/workflows/MyFave.yml)
+
 This is a simple C++ command line application to maintain a list of your favorites.
 
 ## Getting Started
