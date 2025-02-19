@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
 int main(){
@@ -18,11 +17,12 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
-    favorites.push_back(input);
+   if (input != "DONE"){
+   favorites.push_back(input);
+   }
   }while( input != "DONE" );
-
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
+  for(int i = 0; i < favorites.size(); i++)
   {
     cout << favorites.at(i) << endl;
   }
