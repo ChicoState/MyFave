@@ -3,27 +3,21 @@
 
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
-int main(){
+int main() {
   string input = "";
   vector<string> favorites;
 
   cout << "At any time, type DONE to stop recording favorites.\n";
-
-  do
-  {
-    if( favorites.size() == 0 ){
-      cout << "What is your favorite?\n";
-    }
-    else{
-      cout << "What is your next favorite?\n";
-    }
-    getline(cin,input);
+  cout << "What is your favorite?\n";
+  getline(cin, input);
+  while (input != "DONE") {
     favorites.push_back(input);
-  }while( input != "DONE" );
+    cout << "What is your next favorite?\n";
+    getline(cin, input);
+  };
 
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
-  {
+  for (int i = 0; i < favorites.size(); i++) {
     cout << favorites.at(i) << endl;
   }
 
