@@ -27,4 +27,6 @@ docker run -it cpp-container sh
 ```
 docker run -v "$(pwd)":/usr/src -it cpp-container
 ```
+## How to Quit the Application
 
+To quit the application at any time, simply type `DONE` and press **Enter**.
