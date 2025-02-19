@@ -11,7 +11,6 @@ int main(){
 
   do
   {
-    //favorites.push_back(input);
     if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
     }
