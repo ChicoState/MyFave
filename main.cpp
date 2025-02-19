@@ -9,7 +9,7 @@ int main(){
 
   cout << "At any time, type DONE to stop recording favorites.\n";
 
-  do
+  while( input != "DONE" ) 
   {
     if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
@@ -18,14 +18,19 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
-    favorites.push_back(input);
-  }while( input != "DONE" );
-
+    if(input != "DONE") {
+      favorites.push_back(input);
+    } else
+    break;
+  };
+  
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
+
+  for(int i = 0; i < favorites.size(); i++)
   {
     cout << favorites.at(i) << endl;
   }
+  
 
   return 0;
 }
