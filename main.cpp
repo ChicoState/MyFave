@@ -17,8 +17,10 @@ int main(){
     else{
       cout << "What is your next favorite?\n";
     }
+   while(input != "DONE"){
     getline(cin,input);
     favorites.push_back(input);
+  }
   }while( input != "DONE" );
 
   cout << "Your favorite list:\n";
