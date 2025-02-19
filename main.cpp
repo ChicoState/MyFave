@@ -18,6 +18,9 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
+    if(input == "DONE"){
+    	break;
+    }
     favorites.push_back(input);
   }while( input != "DONE" );
 
