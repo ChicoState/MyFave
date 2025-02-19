@@ -1,3 +1,6 @@
+![Build Status](https://github.com/BabyRipGuts/MyFave/actions/workflows/MyFave.yml/badge.svg)
+
+
 # MyFave
 
 This is a simple C++ command line application to maintain a list of your favorites.
