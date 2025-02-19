@@ -3,9 +3,11 @@
 
 using std::cout, std::cin, std::endl, std::string, std::vector;
 
-int main() {
+
+int main()
+{
   string input = "";
-  vector<string> favorites;
+  vector <string> favorites;
 
   cout << "At any time, type DONE to stop recording favorites.\n";
   cout << "What is your favorite?\n";
