@@ -1,3 +1,4 @@
+[![Build C++](https://github.com/Dlopez418/MyFave/actions/workflows/MYFave.yml/badge.svg)](https://github.com/Dlopez418/MyFave/actions/workflows/MYFave.yml)
 name: Build C++
 
 on:
