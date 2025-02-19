@@ -6,6 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    -name Compile main.cpp
-  run: g++ main.cpp --std=c++17 io MyFave 
+    steps:
+    - name: Compile main.cpp
+      run: g++ main.cpp --std=c++17 -o MyFave 
