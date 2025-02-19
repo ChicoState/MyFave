@@ -1,0 +1,23 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up C++ environment
+      uses: actions/setup-cpp@v1
+
+    - name: Build application
+      run: g++ src/main.cpp --std=c++17 -o MyFave
+
+    - name: Run tests
+      run: ./MyFave
