@@ -1,0 +1,22 @@
+name: Build and Test C++ Application
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up g++ compiler
+        run: sudo apt-get install g++ -y
+
+      - name: Compile and Build
+        run: g++ main.cpp --std=c++17 -o MyFave
+
+      - name: Run the application (optional test)
+        run: ./MyFave
