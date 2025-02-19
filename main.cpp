@@ -23,10 +23,12 @@ int main(){
     favorites.push_back(input);
   }
 
+  if (input == "DONE"){
   cout << "Your favorite list:\n";
    for(const auto& favorite : favorites) {
     cout << favorite << endl;
   }
+}
 
   return 0;
 }
