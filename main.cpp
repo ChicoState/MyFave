@@ -11,6 +11,10 @@ int main(){
 
   do
   {
+    if(input == "DONE")
+
+      break;
+
     if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
     }
@@ -19,7 +23,7 @@ int main(){
     }
     getline(cin,input);
     favorites.push_back(input);
-  }while( input != "DONE" );
+  }while( 1 );
 
   cout << "Your favorite list:\n";
   for(int i = 0; i < favorites.size() -1; i++)
