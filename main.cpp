@@ -6,7 +6,7 @@ using std::cout, std::cin, std::endl, std::string, std::vector;
 int main(){
   string input = "";
   vector<string> favorites;
-
+  bool isDone = false;
   cout << "At any time, type DONE to stop recording favorites.\n";
 
   do
@@ -18,11 +18,14 @@ int main(){
       cout << "What is your next favorite?\n";
     }
     getline(cin,input);
-    favorites.push_back(input);
-  }while( input != "DONE" );
+    // check for if done before pushing Done onto vector
+    if(input == "DONE") { isDone = true;}
+    else {favorites.push_back(input);}
+  }while( !isDone );
 
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
+  
+  for(int i = 0; i < favorites.size(); i++)
   {
     cout << favorites.at(i) << endl;
   }
