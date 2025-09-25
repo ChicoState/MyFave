@@ -12,19 +12,20 @@ int main()
 
   do
   {
-    if( favorites.size() == 0 )
+    if( favorites.size() == 0 ){
       cout << "What is your favorite?\n";
-
-    else
+    }
+    else{
       cout << "What is your next favorite?\n";
-  
+    }
     getline(cin,input);
     favorites.push_back(input);
   }while( input != "DONE" );
 
   cout << "Your favorite list:\n";
-  for(int i = 0; i < favorites.size() -1; i++)
+  for(int i = 0; i < favorites.size() -1; i++){
     cout << favorites.at(i) << endl;
+  }
 
   return 0;
 }
